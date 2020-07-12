@@ -11,7 +11,7 @@ For this step, I created a series of dataframes to import, cleanup, reorganize, 
 I created a PCA with 3 components. The first step was to use pandas get_dummies to convert category data and then scaled the data. With the transformed data, I ran the PCA algorithms and created a new dataframe.  
 
 ### K-means
-With the PCA data, I generated an 'elbow curve' to determine the k value, which turns out to be 4 or 5. I ran the K-means algorith with 5 and created the clusters. I then created a new dataframe that combined the pca columns with other columns. 
+With the PCA data, I generated an 'elbow curve' to determine the k value, which turns out to be 4 or 5. I ran the K-means algorith with 4 and created the clusters. I then created a new dataframe that combined the pca columns with other columns. 
 
 ### Visualization
 The first visualization is a 3-D scatter plot of the pca elements that show how the data clusters. The next is a hvplot table with selcted columns. Finally, I created a scatter plot with x-axis as "TotalCoinsMined" and y-axis as "TotalCoinSupply"
